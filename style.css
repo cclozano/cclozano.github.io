@@ -353,3 +353,7 @@ section:last-child {
 	-moz-animation-delay: 0, 2.5s;
 	animation-delay: 0, 2.5s;
 }
+a#pdf { display: block; float: left; background: #666; color: white; padding: 6px 50px 6px 12px; margin-bottom: 6px; text-decoration: none;  }
+a#pdf:hover { background: #222; }
+a#blog { display: block; float: left; background: #666; color: white; padding: 6px 50px 6px 12px; margin-bottom: 6px; text-decoration: none;  }
+a#blog:hover { background: #222; }
