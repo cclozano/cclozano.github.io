@@ -6,13 +6,11 @@
 <meta name="viewport" content="width=device-width"/>
 <meta name="description" content="The Curriculum Vitae of Carlos Lozano."/>
 <meta charset="UTF-8"> 
-
+<link rel="stylesheet" type="text/css" href="print.css">
 <link type="text/css" rel="stylesheet" href="style.css">
 <link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
 
-<!--[if lt IE 9]>
-<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
+
 </head>
 <body id="top">
 
@@ -24,13 +22,13 @@
 		
 		<div id="name">
 			<h1 class="quickFade delayTwo">Carlos Lozano Vergara</h1>
-			<h2 class="quickFade delayThree">Full Stack Developer</h2>
+			<h2 class="quickFade delayThree">Arquitecto DevOps</h2>
 		</div>
 		<div id="contactDetails" class="quickFade delayFour">
 			<ul>
 				<li>e: <a href="mailto:cclozano@gmail.com" target="_blank">cclozano@gmail.com</a></li>
 				<li>w: <a href="https://www.restartcode.com">www.restartcode.com</a></li>
-				<li>m: (+593) 98017042 </li>
+				<li>m: (+593) 980170429 </li>
 				<h3><a id="pdf" href="#" onclick="print()">Download PDF</a></h3>
 				<h3><a id="blog" href="#">Blog</a></h3>
 			</ul>
@@ -42,7 +40,7 @@
 		<section>
 			<article>
 				<div class="sectionTitle">
-					<h1>Personal Profile</h1>
+					<h1>Perfil</h1>
 				</div>
 				
 				<div class="sectionContent">
@@ -57,25 +55,30 @@
 		
 		<section>
 			<div class="sectionTitle">
-				<h1>Work Experience</h1>
+				<h1>Experiencia Laboral</h1>
 			</div>
 			
 			<div class="sectionContent">
 				<article>
-					<h2>Consultor de desarrollo en MAINTLATAM, Guayaquil - Ecuador</h2>
-					<p class="subDetails">Octubre 2017 - Present</p>
+					<h2>Arquitecto DevOps en Banco del Pacifico, Guayaquil - Ecuador</h2>
+					<p class="subDetails">Marzo 2021 — Presente</p>
+					<p>Responsable de proporcionar soporte y entorno de pruebas para actividades de los desarrolladores.</p>
+					<p>Gestión eficaz del tiempo y habilidades de autogestión en referencia a cronogramas del proyecto y entregables asignados.</p>
+					<p>Administración de sistemas de nivel superior en Windows, Linux, Docker, Ansible y Azure DevOps Server.</p>
+				</article>
+				<article>
+					<h2>Consultor de desarrollo en MAINT S.A, Guayaquil - Ecuador</h2>
+					<p class="subDetails">Octubre 2017 - Febrero 2021</p>
 					<p>Desarrollador líder y arquitecto de sistemas que diseña aplicaciones web usando frameworks como Spring,  Vaadin, JavaScript, PostgreSQL y SQL Server.</p>
 					<p>●	Implementación de sistemas con arquitectura de Microservicios desarrollados con SpringBoot y desplegados en contenedores Docker.</p>
 					<p>●	Estructurar sistemas internos que comprenden herramientas de entrada y gestión de pedidos, informes de conversión, ingresos y seguimiento del flujo de trabajo de producción, así como API REST personalizadas diseñadas integradas en Java, Vaadin y Spring</p>
-					<p>●	Instalación y configuración de servidores Linux y entornos virtualizados mediante Docker y Amazon Web Services.</p>
-				</article>
-				
+					<p>●	Instalación y configuración de servidores Linux y entornos virtualizados mediante Docker y VMWARE.</p>
+				</article>				
 				<article>
 					<h2>Desarrollador Senior en Jardines de Esperanza, Guayaquil - Ecuador</h2>
 					<p class="subDetails">Marzo 2016 — Octubre 2017</p>
 					<p>Diseñé, desarrollé y entregué soluciones de aplicaciones de Android y sitios web de alta gama a una base de clientes diversa mediante la utilización de los frameworks Vaadin, SpringBoot y Xamarin.</p>
-				</article>
-				
+				</article>				
 				<article>
 					<h2>Ingeniero de Servicios en Maint Cia. Ltda, Guayaquil - Ecuador</h2>
 					<p class="subDetails">Abril 2012 — Marzo 2016</p>
@@ -88,7 +91,7 @@
 		
 		<section>
 			<div class="sectionTitle">
-				<h1>Key Skills</h1>
+				<h1>Conocimientos tecnicos</h1>
 			</div>
 			
 			<div class="sectionContent">
@@ -140,18 +143,9 @@ pageTracker._trackPageview();
 </script>
 <script>
 	let print = () => {
-		let objFra = document.getElementById('top');
-		objFra.contentWindow.focus();
-		objFra.contentWindow.print();
+		printJS('Carlos_Lozano_Vergara_Resume.pdf')
 	}
-
-	// Using regular js features.
-
-	//     function print() {
-	//         var objFra = document.getElementById('myFrame');
-	//         objFra.contentWindow.focus();
-	//         objFra.contentWindow.print();
-	//     }
 </script>
+<script src="print.js"></script>
 </body>
 </html>
