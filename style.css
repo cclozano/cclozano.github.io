@@ -11,41 +11,47 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
 display:block;
 }
 
-html, body {background: #181818; font-family: 'Lato', helvetica, arial, sans-serif; font-size: 16px; color: #222;}
+html, body {background: #181818; font-family: 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 16px; color: #222;}
 
 .clear {clear: both;}
 
 p {
 	font-size: 1em;
-	line-height: 1.4em;
-	margin-bottom: 20px;
+	line-height: 1.45em;
+	margin-bottom: 16px;
 	color: #444;
+	text-align: justify;
 }
 
 #cv {
 	width: 90%;
-	max-width: 800px;
-	background: #f3f3f3;
+	max-width: 840px;
+	background: #fdfdfd;
 	margin: 30px auto;
+	box-shadow: 0 4px 20px rgba(0,0,0,0.5);
 }
 
 .mainDetails {
-	padding: 25px 35px;
+	padding: 30px 35px;
 	border-bottom: 2px solid #cf8a05;
-	background: #ededed;
+	background: #f0f0f0;
 }
 
 #name h1 {
-	font-size: 2.5em;
+	font-size: 2.3em;
 	font-weight: 700;
 	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
-	margin-bottom: -6px;
+	margin-bottom: 2px;
+	color: #1a1a1a;
 }
 
 #name h2 {
-	font-size: 2em;
-	margin-left: 2px;
-	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+	font-size: 1.15em;
+	font-weight: 600;
+	color: #0e7490;
+	margin-top: 3px;
+	margin-bottom: 8px;
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
 }
 
 #mainArea {
@@ -53,20 +59,24 @@ p {
 }
 
 #headshot {
-	width: 12.5%;
+	width: 110px;
 	float: left;
-	margin-right: 30px;
+	margin-right: 25px;
 }
 
 #headshot img {
 	width: 100%;
-	height: auto;
-	-webkit-border-radius: 50px;
-	border-radius: 50px;
+	height: 110px;
+	object-fit: cover;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	border: 2px solid #cf8a05;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 
 #name {
 	float: left;
+	max-width: 440px;
 }
 
 #contactDetails {
@@ -75,33 +85,30 @@ p {
 
 #contactDetails ul {
 	list-style-type: none;
-	font-size: 0.9em;
+	font-size: 0.88em;
 	margin-top: 2px;
 }
 
 #contactDetails ul li {
-	margin-bottom: 3px;
+	margin-bottom: 4px;
 	color: #444;
 }
 
 #contactDetails ul li a, a[href^=tel] {
-	color: #444; 
+	color: #0e7490; 
 	text-decoration: none;
-	-webkit-transition: all .3s ease-in;
-	-moz-transition: all .3s ease-in;
-	-o-transition: all .3s ease-in;
-	-ms-transition: all .3s ease-in;
-	transition: all .3s ease-in;
+	-webkit-transition: all .2s ease-in;
+	transition: all .2s ease-in;
 }
 
 #contactDetails ul li a:hover { 
 	color: #cf8a05;
+	text-decoration: underline;
 }
-
 
 section {
 	border-top: 1px solid #dedede;
-	padding: 20px 0 0;
+	padding: 22px 0 6px;
 }
 
 section:first-child {
@@ -109,7 +116,7 @@ section:first-child {
 }
 
 section:last-child {
-	padding: 20px 0 10px;
+	padding: 22px 0 20px;
 }
 
 .sectionTitle {
@@ -125,45 +132,114 @@ section:last-child {
 .sectionTitle h1 {
 	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
 	font-style: italic;
-	font-size: 1.5em;
+	font-size: 1.45em;
 	color: #cf8a05;
+	line-height: 1.2em;
+}
+
+.sectionContent article {
+	margin-bottom: 20px;
+}
+
+.sectionContent article:last-child {
+	margin-bottom: 5px;
 }
 
 .sectionContent h2 {
 	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
-	font-size: 1.5em;
-	margin-bottom: -2px;
+	font-size: 1.35em;
+	font-weight: 700;
+	color: #1a1a1a;
+	margin-bottom: 2px;
 }
 
 .subDetails {
-	font-size: 0.8em;
+	font-size: 0.85em;
 	font-style: italic;
-	margin-bottom: 3px;
+	color: #666;
+	margin-bottom: 8px;
 }
 
-.keySkills {
-	list-style-type: none;
-	-moz-column-count:3;
-	-webkit-column-count:3;
-	column-count:3;
-	margin-bottom: 20px;
-	font-size: 1em;
+.sectionContent ul.bulletList {
+	list-style-type: disc;
+	padding-left: 20px;
+	margin-bottom: 12px;
 	color: #444;
 }
 
-.keySkills ul li {
-	margin-bottom: 3px;
+.sectionContent ul.bulletList li {
+	margin-bottom: 6px;
+	font-size: 0.95em;
+	line-height: 1.45em;
+	text-align: justify;
+}
+
+.sectionContent ul.skillsCategories {
+	list-style-type: none;
+	padding: 0;
+	margin-bottom: 10px;
+}
+
+.sectionContent ul.skillsCategories li {
+	margin-bottom: 10px;
+	font-size: 0.95em;
+	line-height: 1.45em;
+	text-align: justify;
+}
+
+.sectionContent ul.skillsCategories strong {
+	color: #1a1a1a;
+	font-weight: 700;
+}
+
+.projectItem {
+	margin-bottom: 14px;
+}
+
+.projectItem h3 {
+	font-size: 1.05em;
+	font-weight: 700;
+	color: #1a1a1a;
+	margin-bottom: 2px;
+}
+
+.projectItem .techStack {
+	font-size: 0.85em;
+	font-weight: 600;
+	color: #0e7490;
+	margin-bottom: 4px;
+}
+
+.projectItem p {
+	margin-bottom: 0;
+	font-size: 0.95em;
+}
+
+.eduList {
+	list-style-type: none;
+	padding: 0;
+}
+
+.eduList li {
+	margin-bottom: 8px;
+	font-size: 0.95em;
+	line-height: 1.45em;
+}
+
+.eduList strong {
+	color: #1a1a1a;
 }
 
 @media all and (min-width: 602px) and (max-width: 800px) {
 	#headshot {
-		display: none;
+		width: 90px;
+		margin-right: 18px;
 	}
-	
-	.keySkills {
-	-moz-column-count:2;
-	-webkit-column-count:2;
-	column-count:2;
+	#headshot img {
+		height: 90px;
+	}
+	#name h1 {
+		font-size: 2em;
 	}
 }
 
@@ -175,13 +251,23 @@ section:last-child {
 	}
 	
 	#headshot {
-		display: none;
+		float: none;
+		margin: 0 auto 15px auto;
+		text-align: center;
+		width: 100px;
+	}
+	#headshot img {
+		height: 100px;
 	}
 	
 	#name, #contactDetails {
 		float: none;
 		width: 100%;
 		text-align: center;
+	}
+
+	#contactDetails {
+		margin-top: 15px;
 	}
 	
 	.sectionTitle, .sectionContent {
@@ -190,20 +276,14 @@ section:last-child {
 	}
 	
 	.sectionTitle {
-		margin-left: -2px;
+		margin-bottom: 8px;
 		font-size: 1.25em;
-	}
-	
-	.keySkills {
-		-moz-column-count:2;
-		-webkit-column-count:2;
-		column-count:2;
 	}
 }
 
 @media all and (max-width: 480px) {
 	.mainDetails {
-		padding: 15px 15px;
+		padding: 20px 15px;
 	}
 	
 	section {
@@ -211,18 +291,11 @@ section:last-child {
 	}
 	
 	#mainArea {
-		padding: 0 25px;
-	}
-
-	
-	.keySkills {
-	-moz-column-count:1;
-	-webkit-column-count:1;
-	column-count:1;
+		padding: 0 20px;
 	}
 	
 	#name h1 {
-		line-height: .8em;
+		line-height: 1.1em;
 		margin-bottom: 4px;
 	}
 }
@@ -230,130 +303,59 @@ section:last-child {
 @media print {
     #cv {
         width: 100%;
+        box-shadow: none;
+        margin: 0;
     }
 }
 
 @-webkit-keyframes reset {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 0;
-	}
+	0% { opacity: 0; }
+	100% { opacity: 0; }
 }
 
 @-webkit-keyframes fade-in {
-	0% {
-		opacity: 0;
-	}
-	40% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-
-@-moz-keyframes reset {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 0;
-	}
-}
-
-@-moz-keyframes fade-in {
-	0% {
-		opacity: 0;
-	}
-	40% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
+	0% { opacity: 0; }
+	40% { opacity: 0; }
+	100% { opacity: 1; }
 }
 
 @keyframes reset {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 0;
-	}
+	0% { opacity: 0; }
+	100% { opacity: 0; }
 }
 
 @keyframes fade-in {
-	0% {
-		opacity: 0;
-	}
-	40% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
+	0% { opacity: 0; }
+	40% { opacity: 0; }
+	100% { opacity: 1; }
 }
 
 .instaFade {
-    -webkit-animation-name: reset, fade-in;
-    -webkit-animation-duration: 1.5s;
-    -webkit-animation-timing-function: ease-in;
-	
-	-moz-animation-name: reset, fade-in;
-    -moz-animation-duration: 1.5s;
-    -moz-animation-timing-function: ease-in;
-	
-	animation-name: reset, fade-in;
-    animation-duration: 1.5s;
-    animation-timing-function: ease-in;
+    -webkit-animation: reset 1.5s ease-in, fade-in 1.5s ease-in;
+	animation: reset 1.5s ease-in, fade-in 1.5s ease-in;
 }
 
 .quickFade {
-    -webkit-animation-name: reset, fade-in;
-    -webkit-animation-duration: 2.5s;
-    -webkit-animation-timing-function: ease-in;
-	
-	-moz-animation-name: reset, fade-in;
-    -moz-animation-duration: 2.5s;
-    -moz-animation-timing-function: ease-in;
-	
-	animation-name: reset, fade-in;
-    animation-duration: 2.5s;
-    animation-timing-function: ease-in;
+    -webkit-animation: reset 2.5s ease-in, fade-in 2.5s ease-in;
+	animation: reset 2.5s ease-in, fade-in 2.5s ease-in;
 }
  
-.delayOne {
-	-webkit-animation-delay: 0, .5s;
-	-moz-animation-delay: 0, .5s;
-	animation-delay: 0, .5s;
-}
+.delayOne { animation-delay: 0, .5s; }
+.delayTwo { animation-delay: 0, 1s; }
+.delayThree { animation-delay: 0, 1.5s; }
+.delayFour { animation-delay: 0, 2s; }
+.delayFive { animation-delay: 0, 2.5s; }
 
-.delayTwo {
-	-webkit-animation-delay: 0, 1s;
-	-moz-animation-delay: 0, 1s;
-	animation-delay: 0, 1s;
+a#pdf { 
+	display: inline-block; 
+	background: #cf8a05; 
+	color: white; 
+	padding: 7px 18px; 
+	margin-top: 6px; 
+	margin-bottom: 6px; 
+	text-decoration: none; 
+	font-weight: 600;
+	border-radius: 4px;
+	transition: background .2s ease;
 }
-
-.delayThree {
-	-webkit-animation-delay: 0, 1.5s;
-	-moz-animation-delay: 0, 1.5s;
-	animation-delay: 0, 1.5s;
-}
-
-.delayFour {
-	-webkit-animation-delay: 0, 2s;
-	-moz-animation-delay: 0, 2s;
-	animation-delay: 0, 2s;
-}
-
-.delayFive {
-	-webkit-animation-delay: 0, 2.5s;
-	-moz-animation-delay: 0, 2.5s;
-	animation-delay: 0, 2.5s;
-}
-a#pdf { display: block; float: left; background: #666; color: white; padding: 6px 50px 6px 12px; margin-bottom: 6px; text-decoration: none;  }
-a#pdf:hover { background: #222; }
-a#blog { display: block; float: left; background: #666; color: white; padding: 6px 50px 6px 12px; margin-bottom: 6px; text-decoration: none;  }
-a#blog:hover { background: #222; }
+a#pdf:hover { background: #b07402; }
